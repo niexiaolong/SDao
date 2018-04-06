@@ -5,8 +5,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.TYPE) // 此注解仅作用于类
+@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME) // 此注解一直保留到运行时
-public @interface Entity {
+public @interface Column {
     String name() default "";
 }
